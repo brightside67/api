@@ -1,0 +1,43 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "base dev setup",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "webpack -w",
+    "build": "npm install && webpack -w"
+  },
+  "author": "vladimir kosenko",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bluebird": "^3.5.0",
+    "chunkhash-replace-webpack-plugin": "0.0.10",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.3",
+    "domd": "^0.7.2",
+    "edispatcher": "^1.0.7",
+    "es6-promise": "^4.1.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.7.2",
+    "postcss-assets": "^4.1.0",
+    "postcss-loader": "^2.0.5",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-will-change": "^2.0.0",
+    "sass-loader": "^6.0.5",
+    "shim": "^0.6.0",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "array-includes": "^3.0.3",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
