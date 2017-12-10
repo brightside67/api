@@ -1,11 +1,14 @@
 package models
 
-import "gopkg.in/mgo.v2/bson"
+//Post hz
+type Post struct {
+	ID      string      `json:"id"`
+	Title   string      `json:"title"`
+	Content string      `json:"content"`
+	Date    interface{} `json:"date"`
+}
 
-//Movie is movie struct obj
-type Movie struct {
-	ID          bson.ObjectId `bson:"_id" json:"id"`
-	Name        string        `bson:"name" json:"name"`
-	CoverImage  string        `bson:"cover_image" json:"cover_image"`
-	Description string        `bson:"description" json:"description"`
+//NewPost hz
+func NewPost(id string, title string, content string, time interface{}) *Post {
+	return &Post{id, title, content, time}
 }

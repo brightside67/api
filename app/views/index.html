@@ -3,5 +3,10 @@
 
 <h1 data-component="green">Hello world!</h1>
 
+{{range .}}
 
+<p>Title: {{.Title}}</p>
+<p>date: {{.Title}}</p>
+<p>Content: {{.Date}}</p>
+{{end}}
 {{template "footer"}}
